@@ -1,0 +1,3 @@
+SELECT 'MUHAMAD SHURO FADHILLAH' AS "nama saya" , 'NAMA AYAH' AS "nama ayah" , 'NAMA IBU' AS "nama ibu" FROM dual;
+SELECT 4/3*22/7*POWER(7,3) AS "Volume Bola" FROM dual;
+SELECT SYSDATE-7 AS "Pekan kemarin", SYSDATE+7 AS "Pekan nanti" FROM dual;
