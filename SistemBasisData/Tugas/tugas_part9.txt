@@ -1,3 +1,20 @@
 SELECT 'MUHAMAD SHURO FADHILLAH' AS "nama saya" , 'NAMA AYAH' AS "nama ayah" , 'NAMA IBU' AS "nama ibu" FROM dual;
 SELECT 4/3*22/7*POWER(7,3) AS "Volume Bola" FROM dual;
 SELECT SYSDATE-7 AS "Pekan kemarin", SYSDATE+7 AS "Pekan nanti" FROM dual;
+
+SELECT MIN(harga) AS "Harga Paling Murah" FROM data_barang;
+SELECT COUNT(no_struk) AS "Banyak Transaksi" FROM penjualan;
+SELECT SUM(harga*jumlah) AS "Total Uang" FROM detil_jual;
+SELECT CEIL(AVG(jumlah)) AS "Rata-rata barang terjual" FROM detil_jual;
+SELECT MOD(jumlah,2) AS "Hasil Ganjil Genap" FROM detil_jual;
+SELECT POWER(27,1/3) AS "Akar Pangkat 3 Dari 27" FROM dual;
+
+SELECT LENGTH('Muhamad Shuro Fadhillah') AS "Panjang Nama" FROM dual;
+SELECT SUBSTR(19090072,-3) AS "NIM" FROM dual;
+SELECT SUBSTR(19090072,-8,2) || SUBSTR(19090072,-4) AS "NIM" FROM dual;
+
+SELECT TRUNC(TO_NUMBER(SYSDATE - TO_DATE('09-Nov-2000'))) || ' Hari'  AS "Usia dalam hari" FROM dual;
+SELECT TRUNC(TO_NUMBER(SYSDATE - TO_DATE('09-Nov-2000')) / 30.417) || ' Bulan'  AS "Usia dalam bulan" FROM dual;
+SELECT TRUNC(TO_NUMBER(SYSDATE - TO_DATE('09-Nov-2000')) / 365.25 ) || ' Tahun' AS "Usia dalam tahun" FROM dual;
+SELECT to_char(date'2000-11-09', 'DAY') as "Hari lahir" FROM dual;
+SELECT localtimestamp as "Tanggal Saya mengerjakan" from dual;
