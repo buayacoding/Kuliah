@@ -44,12 +44,5 @@ WHEN ing >= 85 AND ing <=100 THEN 'A'
 WHEN ing >=70 AND ing <=84 THEN 'B'
 WHEN ing >=55 AND ing <=69 THEN 'C'
 ELSE 'D'
-END
-ORDER BY 
-CASE 
-WHEN ing >= 85 AND ing <=100 THEN 'A' 
-WHEN ing >=70 AND ing <=84 THEN 'B' 
-WHEN ing >=55 AND ing <=69 THEN 'C' 
-ELSE 'D' 
-END ;
+END;
 
